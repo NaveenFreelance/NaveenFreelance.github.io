@@ -277,6 +277,69 @@
             color: var(--text-muted);
         }
 
+        /* Reviews Section Styles */
+        .review-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.8rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 1.2rem;
+        }
+
+        .review-card:hover {
+            border-color: var(--accent);
+        }
+
+        .stars {
+            color: #f59e0b;
+            font-size: 1.1rem;
+            letter-spacing: 2px;
+            margin-bottom: 0.5rem;
+        }
+
+        .review-text {
+            color: var(--text-main);
+            font-size: 0.95rem;
+            font-style: italic;
+            line-height: 1.5;
+        }
+
+        .review-author {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            border-top: 1px solid var(--border);
+            padding-top: 0.8rem;
+        }
+
+        .author-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--accent);
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1rem;
+            flex-shrink: 0;
+        }
+
+        .author-info h4 {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--text-main);
+        }
+
+        .author-info span {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
         /* Contact Section */
         .contact-box {
             background: var(--bg-card);
@@ -369,6 +432,7 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#work">Work</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                 <button class="theme-btn" id="themeToggle" aria-label="Toggle Theme">
@@ -472,6 +536,56 @@
                 <div class="card">
                     <h3>🤝 Clear Communication</h3>
                     <p>Easy and responsive updates through Instagram or email throughout the process.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section id="reviews">
+            <h2 class="section-title">Client Reviews</h2>
+            <p class="section-subtitle">What clients say about working with me</p>
+
+            <div class="grid">
+                <div class="review-card">
+                    <div>
+                        <div class="stars">★★★★★</div>
+                        <p class="review-text">"Naveen edited my Instagram Reels super fast! The transitions and captions were clean, and the turnaround time was amazing for the price."</p>
+                    </div>
+                    <div class="review-author">
+                        <div class="author-avatar">R</div>
+                        <div class="author-info">
+                            <h4>Rohan Sharma</h4>
+                            <span>Content Creator • Video Editing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <div class="stars">★★★★★</div>
+                        <p class="review-text">"Got a full single-page site made for my small business. The light/dark mode switch looks great and it works perfectly on mobile!"</p>
+                    </div>
+                    <div class="review-author">
+                        <div class="author-avatar">A</div>
+                        <div class="author-info">
+                            <h4>Ananya Gupta</h4>
+                            <span>Business Owner • Custom Website</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <div class="stars">★★★★★</div>
+                        <p class="review-text">"Designed a modern logo for my project in under 24 hours. Clear communication on Instagram throughout the whole edit process."</p>
+                    </div>
+                    <div class="review-author">
+                        <div class="author-avatar">M</div>
+                        <div class="author-info">
+                            <h4>Michael K.</h4>
+                            <span>Startup Founder • Logo Design</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
